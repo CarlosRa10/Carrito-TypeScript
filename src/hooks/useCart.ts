@@ -68,7 +68,7 @@ export const useCart = () =>{
         setCart(updatedCart)
       }
     
-      function clearCart(e) {
+      function clearCart() {
         setCart([])
       }
 

@@ -1,6 +1,24 @@
+import type { CartItem,Guitar } from "../Types"
+//function signature
+type HeaderProps ={
+    cart: CartItem[]
+    removeFromCart: (id:Guitar['id'])=> void
+    decreaseQuantity: (id:Guitar['id'])=> void
+    increaseQuantity: (id:Guitar['id'])=> void
+    clearCart: ()=> void
+    isEmpty: boolean
+    cartTotal: number
+}
 
-
-export default function Header({cart, removeFromCart, decreaseQuantity, increaseQuantity, clearCart,isEmpty,cartTotal}) {
+export default function Header({
+        cart, 
+        removeFromCart, 
+        decreaseQuantity, 
+        increaseQuantity, 
+        clearCart,
+        isEmpty,
+        cartTotal
+    }: HeaderProps) {
 
 
 
